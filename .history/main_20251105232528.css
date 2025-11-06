@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    padding: 32px 32px; /* Este es un comentario */
+    min-height: 80px;
+    background-color: #1F1F1F;
+}
+
+nav img { /* Este es un combinator selector. Va a seleccionar cualquier img que esté luego de nav.
+    nav a: no es recomendable, porque selecciona todos los child del nav.
+    nav >a: direct descendent. Select only the anchor que estan directamente relacionados con los nav.
+    */
+
+    max-height: 48px;
+    /* width: auto; Auto: Instrinsic size of the image 
+    height: auto; */
+    background-color:white; 
+
+}
+
+.spacer {
+    border: 1px solid yellow;
+    display: inline-block;
+    width: calc(100% - 40px - 295px);
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: white;
+
+}
