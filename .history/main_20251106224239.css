@@ -1,4 +1,4 @@
-/* 0.---------------------- General Setup ---------------------- */
+/* 1.---------------------- General Setup ---------------------- */
 
 *  {
     Box-sizing: border-box; /* How to calculate dimensiones */
@@ -20,7 +20,7 @@ Main {
     Flex: 1;
 }
 
-/* 1.---------------------- Header - Upper Menu - Encabezado ---------------------- */
+/* 2.---------------------- Header - Upper Menu - Encabezado ---------------------- */
 
 /* background box and colors */
 /* In Practice class: nav: means both header and footer 
@@ -31,140 +31,61 @@ nav {
 }
 */
 
-/* Dimensions */
+/* Header navigation: logo + menú */
 Header nav {
     Padding: 10px 32px;
     Min-height: 80px;
     Background-color: #1F1F1F;
-    Display: flex; /*added*/
-    Align-items: center;           /* vertical */
-    Justify-content: space-between; /* separates logo and menu */
+    Display: flex;
+    Align-items: center;           /* centra verticalmente */
+    Justify-content: space-between; /* separa logo y menú */
 }
 
-/* Icon - Image */
 Header nav img {
     Max-height: 48px;
     Background-color: white;
-    Display: inline-block;  /* added */
-    Vertical-align: middle; /* added */
+    Display: inline-block;
+    Vertical-align: middle;
 }
 
-/* Top Horizontal Menu */
-
-/* Aligning calculation*/
-/* In class:
-.spacer {
-    display: inline-block;
-    width: calc(100% - 40px - 320px);
-}
-*/
-/* If 0 first number: result left. If 100% results right */
-
-/* Text Relation with image */
 Header nav ul {
     List-style: none;
     Display: flex;
     Gap: 20px;
 }
 
-/* Word Colors depending their status */
-/* Word clicked */
 Header nav ul li a {
     Text-decoration: none;
     Color: white;
 }
 
-/* Text color if we are in the current page*/
 Header nav ul li a.current {
     Color: aquamarine;
     Font-weight: bold;
 }
 
-/* Mouse over the word */
 Header nav ul li a:hover {
     Color: rgb(92, 229, 0);
 }
 
+/* 3.---------------------- Main / Home content ---------------------- */
 
-/* 1.2.special part -------------------------------- Side Menu --------------------------------------------------*/
-
-/* Side menu on Services */
-.page {
-    Display: flex;   /* content in columns */
-    Gap: 0;
-}
-
-/* Dimensions */
-.main-content {
-    Width: 72%;
-    Vertical-align: top;
-}
-
-/* Style */
-.side-nav {
-    Width: 28%;
-    Background-color: #2a2a2a;
-    Color: #fff;
-    Margin: 0;                /* sin espacio externo */
-    Padding: 0;               /* sin espacio interno general */
-    Border: none;             /* sin borde */
-    Box-sizing: border-box;
-    Min-height: 100%;         /* ocupa todo el alto */
-}
-
-/* Title: Categories - Dimensions */
-.side-nav h2 {
-    Margin: 0;
-    Padding: 16px 16px 8px;
-    Font-size: 1.6rem;
-    Font-weight: 700;
-}
-
-/* List Dimensions */
-.side-nav ul {
-    List-style: none;
-    Margin: 0;
-    Padding: 0 16px 16px;
-}
-
-.side-nav ul li {
-    Margin: 0;
-    Padding: 6px 0;
-}
-
-/* Colors */
-.side-nav ul li a {
-    Color: #4bb4ff;
-    Text-decoration: none;
-    Display: inline-block;
-    Width: 100%;
-}
-
-.side-nav ul li a:hover {
-    Text-decoration: underline;
-    Background-color: #1f1f1f;
-}
-
-/* 2.---------------------- Main / Home content ---------------------- */
-
-/* Space size */
 Main {
     Display: block;
-    Padding: 24px 32px;
+    Padding: 24px 32px; /* padding general para Home */
 }
+
 
 Main.page {
     Padding: 0px 0px 0px 0px; /* top=0 keeps borders united with header and footer */
 }
 
-/* Title: Home Page */
 #page-title {
     Font-size: 2rem;
     Text-align: center;
     Margin-bottom: 24px;
 }
 
-/* text cards */
 .card-grid {
     Display: block;
 }
@@ -181,8 +102,66 @@ Main.page {
     Margin-bottom: 8px;
 }
 
+/* 4.---------------------- Services layout ---------------------- */
 
-/* 3.---------------------- Footer ---------------------- */
+/* Contenedor principal: contenido + aside */
+.page {
+    Display: flex;   /* coloca el contenido y aside en columnas */
+    Gap: 0;
+}
+
+/* Contenido principal */
+.main-content {
+    Width: 72%;
+    Vertical-align: top;
+}
+
+/* Aside Categories */
+.side-nav {
+    Width: 28%;
+    Background-color: #2a2a2a;
+    Color: #fff;
+    Margin: 0;                /* sin espacio externo */
+    Padding: 0;               /* sin espacio interno general */
+    Border: none;             /* sin borde */
+    Box-sizing: border-box;
+    Min-height: 100%;         /* ocupa todo el alto */
+}
+
+/* Título dentro del aside */
+.side-nav h2 {
+    Margin: 0;
+    Padding: 16px 16px 8px;
+    Font-size: 1.6rem;
+    Font-weight: 700;
+}
+
+/* Lista del aside */
+.side-nav ul {
+    List-style: none;
+    Margin: 0;
+    Padding: 0 16px 16px;
+}
+
+.side-nav ul li {
+    Margin: 0;
+    Padding: 6px 0;
+}
+
+.side-nav ul li a {
+    Color: #4bb4ff;
+    Text-decoration: none;
+    Display: inline-block;
+    Width: 100%;
+}
+
+.side-nav ul li a:hover {
+    Text-decoration: underline;
+    Background-color: #1f1f1f;
+}
+
+/* 5.---------------------- Footer ---------------------- */
+
 #main-footer {
     Background-color: #1F1F1F;
     Color: #ffffff;
@@ -198,26 +177,25 @@ Main.page {
     Margin: 0 auto;
 }
 
-/* FAQ, Terms, etc. */
 #main-footer nav ul {
     Display: inline-block;
     List-style: none;
-    Margin: 0; /* Distance between FAQ text and white line */
+    Margin: 0;
     Padding: 0;
 }
 
 #main-footer nav ul li {
     Display: inline-block;
-    Margin: 0 10px;  /*Distance between words in footer: FAQ, Terms, etc. */
+    Margin: 0 10px;
 }
 
 #main-footer nav ul li a {
-    Color: rgb(51, 122, 216); /* Text color */
+    Color: rgb(51, 122, 216);
     Text-decoration: none;
     Font-size: 0.9rem;
 }
 
-/* Line separation */
+/* Línea gris */
 .footer-line {
     Border: none;
     Border-top: 1px solid #ccc;
@@ -225,7 +203,7 @@ Main.page {
     Margin: 8px auto 12px;
 }
 
-/* Last Line Text: My Website */
+/* Texto */
 #main-footer p {
     Font-size: 0.8rem;
     Margin: 0;

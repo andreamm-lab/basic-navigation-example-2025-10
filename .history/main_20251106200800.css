@@ -1,0 +1,227 @@
+/* 1.------------------------------------------------ General Setup ---------------------------------------------*/
+
+* {
+    box-sizing: border-box; /* How to calculate dimensiones */
+    margin: 0; /* Distance beetween words */
+    padding: 0; /* viñetas */
+}
+
+/* All Font Page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000;
+}
+
+
+
+/* 2.---------------------------------------- Header - Upper Menu - Encabezado ---------------------------------*/
+
+/* background box and colors */
+/* In Practice class: nav: means both header and footer 
+nav {
+    padding: 10px 10px; 
+    min-height: 80px;
+    background-color: #1F1F1F;
+}
+*/
+
+header nav {
+    padding: 10px 32px; 
+    min-height: 80px;
+    background-color: #1F1F1F;
+}
+
+/* Icon - Image */
+nav img {
+    max-height: 48px;
+    background-color: white;
+}
+
+img {
+    display: block;
+}
+
+/* Top Horizontal Menu */
+/* Aligning calculation*/
+.spacer {
+    display: inline-block;
+    width: calc(100% - 40px - 320px);
+} /* If 0 first number: result left. If 100% results right */
+
+/* Text Relation with image */
+nav ul {
+    list-style: none;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+/* Words Distribution */
+nav ul li {
+    display: inline-block; /* Horizontal */
+    margin-right: 20px;
+}
+
+/* ask */
+nav ul li:last-child {
+    margin-right: 0; 
+}
+
+nav ul li a {
+    text-decoration: none
+    ;
+}
+
+/* Word Colors depending their status */
+/* Word clicked */
+nav ul li a:link,
+nav ul li a:visited {
+    color: white;
+}
+
+/* Text color if we are in the current page*/
+nav ul li a.current {
+    color: aquamarine;
+    font-weight: bold;
+}
+
+/* Mouse over the word */
+nav ul li a:hover {
+    color: rgb(92, 229, 0);
+}
+
+
+/*2.2: special part -------------------------------- Side Menu --------------------------------------------------*/
+
+
+/* Side menu on Services */
+.page {
+    display: block;
+}
+
+.main-content {
+    display: inline-block;
+    width: 69%;
+    vertical-align: top;
+}
+
+.side-nav {
+    display: inline-block;
+    width: 28%;
+    background-color: #2a2a2a;
+    color: #fff;
+    margin-left: 1%;
+    padding: 16px;
+    min-height: 320px;
+    border: 1px solid #000;
+}
+
+.side-nav h2 {
+    margin-bottom: 12px;
+}
+
+.side-nav ul {
+    list-style: none;
+}
+
+.side-nav ul li {
+    margin-bottom: 8px;
+    display: block; 
+}
+
+.side-nav ul li a {
+    color: #4bb4ff;
+    text-decoration: none;
+}
+
+.side-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/*3.--------------------------------------- Body - White Space for Content ---------------------------------------*/
+
+/* Space size */
+main {
+    display: block; 
+    padding: 24px 32px;
+    min-height: 400px;
+}
+
+/* Home Page Title */
+#page-title {
+    font-size: 2rem;
+}
+
+.home-main h1 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* text cards */
+.card-grid {
+    display: block; /* vertical align */
+}
+
+.card {
+    background-color: #f0f0f0;
+    border: 1px solid #d0d0d0;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.card h2 {
+    margin-bottom: 8px;
+}
+
+/*4.-----------------------------------------------------Footer--------------------------------------------------- */
+
+footer nav {
+    padding: 15px 0px; 
+    height: auto;
+    background-color: #1F1F1F;
+}
+
+/* FAQ, Terms, etc. */
+#main-footer nav ul {
+    display: inline-block;
+    list-style: none;
+    margin-bottom: 0 px; /* Distance between FAQ text and white line */
+   
+
+}
+
+#main-footer nav ul li {
+    display: inline-block;
+    margin: 0 10px; /*Distance between words in footer: FAQ, Terms, etc. */
+   
+}
+
+#main-footer nav ul li a {
+    color: rgb(51, 122, 216); /* Text color */
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Line separation */
+
+.footer-line {
+  border: none;
+  border-top: 1px solid #ccc; 
+  margin: 0px auto 5px;
+  width: 80%;
+}
+
+
+/* Last Line Text: My Website */
+#main-footer {
+    background-color: #1F1F1F;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 8px 4px; /* 1st number: inferior margin | 2nd: weight and it affects the line also. */
+    margin: 12 px; 
+}
+
+#main-footer p {
+    font-size: 0.8rem; /* Font size. 'P' is necessary because */
+}

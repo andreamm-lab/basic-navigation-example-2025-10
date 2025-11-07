@@ -132,7 +132,6 @@ Header nav ul li a:hover {
     Padding: 6px 0;
 }
 
-/* Colors */
 .side-nav ul li a {
     Color: #4bb4ff;
     Text-decoration: none;
@@ -147,24 +146,22 @@ Header nav ul li a:hover {
 
 /* 2.---------------------- Main / Home content ---------------------- */
 
-/* Space size */
 Main {
     Display: block;
-    Padding: 24px 32px;
+    Padding: 24px 32px; /* padding general para Home */
 }
+
 
 Main.page {
     Padding: 0px 0px 0px 0px; /* top=0 keeps borders united with header and footer */
 }
 
-/* Title: Home Page */
 #page-title {
     Font-size: 2rem;
     Text-align: center;
     Margin-bottom: 24px;
 }
 
-/* text cards */
 .card-grid {
     Display: block;
 }
@@ -183,6 +180,7 @@ Main.page {
 
 
 /* 3.---------------------- Footer ---------------------- */
+
 #main-footer {
     Background-color: #1F1F1F;
     Color: #ffffff;
@@ -198,26 +196,25 @@ Main.page {
     Margin: 0 auto;
 }
 
-/* FAQ, Terms, etc. */
 #main-footer nav ul {
     Display: inline-block;
     List-style: none;
-    Margin: 0; /* Distance between FAQ text and white line */
+    Margin: 0;
     Padding: 0;
 }
 
 #main-footer nav ul li {
     Display: inline-block;
-    Margin: 0 10px;  /*Distance between words in footer: FAQ, Terms, etc. */
+    Margin: 0 10px;
 }
 
 #main-footer nav ul li a {
-    Color: rgb(51, 122, 216); /* Text color */
+    Color: rgb(51, 122, 216);
     Text-decoration: none;
     Font-size: 0.9rem;
 }
 
-/* Line separation */
+/* Línea gris */
 .footer-line {
     Border: none;
     Border-top: 1px solid #ccc;
@@ -225,7 +222,7 @@ Main.page {
     Margin: 8px auto 12px;
 }
 
-/* Last Line Text: My Website */
+/* Texto */
 #main-footer p {
     Font-size: 0.8rem;
     Margin: 0;

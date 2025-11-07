@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* header / nav principal */
+nav {
+    padding: 32px 32px;
+    min-height: 80px;
+    background-color: #1F1F1F;
+}
+
+nav img {
+    max-height: 48px;
+    background-color: white;
+}
+
+.spacer {
+    display: inline-block;
+    width: calc(100% - 40px - 320px);
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: white;
+}
+
+nav ul li a.current {
+    color: aquamarine;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(92, 229, 0);
+}
+
+main {
+    display: block; 
+    padding: 24px 32px;
+    min-height: 400px;
+}
+
+.home-main h1 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* text cards */
+.card-grid {
+    display: block; /* vertical align */
+}
+
+.card {
+    background-color: #f0f0f0;
+    border: 1px solid #d0d0d0;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.card h2 {
+    margin-bottom: 8px;
+}
+
+/* Side menu on Services */
+.page {
+    display: block;
+}
+
+.main-content {
+    display: inline-block;
+    width: 69%;
+    vertical-align: top;
+}
+
+.side-nav {
+    display: inline-block;
+    width: 28%;
+    background-color: #2a2a2a;
+    color: #fff;
+    margin-left: 1%;
+    padding: 16px;
+    min-height: 320px;
+    border: 1px solid #000;
+}
+
+.side-nav h2 {
+    margin-bottom: 12px;
+}
+
+.side-nav ul {
+    list-style: none;
+}
+
+.side-nav ul li {
+    margin-bottom: 8px;
+    display: block; 
+}
+
+.side-nav ul li a {
+    color: #4bb4ff;
+    text-decoration: none;
+}
+
+.side-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* footer */
+#main-footer {
+    background-color: #1F1F1F;
+    color: white;
+    text-align: center;
+    padding: 16px 32px;
+}
+
+#main-footer nav ul {
+    display: inline-block;
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+#main-footer nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#main-footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+#main-footer p {
+    font-size: 0.8rem;
+}
+
+#page-title {
+    font-size: 2rem;
+}
+
+.footer-line {
+  border: none;
+  border-top: 1px solid #ccc; 
+  margin: 4px auto 12px;
+  width: 80%;
+}
